@@ -27,13 +27,6 @@ module.exports = {
 				icon: `src/images/potwin-construction-favicon.png`
 			}
 		},
-		`gatsby-plugin-sass`,
-		{
-			resolve: `gatsby-plugin-google-fonts`,
-			options: {
-				fonts: [ `yantramanav\:400,500,700` ],
-				display: 'swap'
-			}
-		}
+		`gatsby-plugin-sass`
 	]
 };

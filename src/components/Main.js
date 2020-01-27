@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../sass/main.module.scss';
+import styles from '../sass/Main.module.scss';
 
 const Main = ({ children }) => {
 	return <main className={styles.main}>{children}</main>;

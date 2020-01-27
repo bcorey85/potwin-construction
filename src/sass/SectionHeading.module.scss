@@ -1,0 +1,17 @@
+@import './variables';
+
+.sectionHeading {
+	margin-bottom: 2.4rem;
+	color: $bluePrimary;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		height: 4rem;
+		width: .8rem;
+		top: -.3rem;
+		left: -1.6rem;
+		background-color: $redSecondary;
+	}
+}

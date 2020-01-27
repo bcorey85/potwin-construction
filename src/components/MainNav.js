@@ -1,35 +1,34 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
-import styles from '../sass/mainnav.module.scss';
+import styles from '../sass/MainNav.module.scss';
 const MainNav = ({ color }) => {
 	return (
 		<nav className={styles.mainnav} style={{ color: color }}>
 			<ul>
 				<li>
-					<Link to='#home' className={styles.navlink}>
+					<a href='#home' className={styles.navlink}>
 						Home
-					</Link>
+					</a>
 				</li>
 				<li>
-					<Link to='#services' className={styles.navlink}>
+					<a href='#services' className={styles.navlink}>
 						Services
-					</Link>
+					</a>
 				</li>
 				<li>
-					<Link to='#projects' className={styles.navlink}>
+					<a href='#projects' className={styles.navlink}>
 						Projects
-					</Link>
+					</a>
 				</li>
 				<li>
-					<Link to='#process' className={styles.navlink}>
+					<a href='#process' className={styles.navlink}>
 						Process
-					</Link>
+					</a>
 				</li>
 				<li>
-					<Link to='#contact' className={styles.navlink}>
+					<a href='#contact' className={styles.navlink}>
 						Contact
-					</Link>
+					</a>
 				</li>
 			</ul>
 		</nav>

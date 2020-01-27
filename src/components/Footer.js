@@ -2,7 +2,7 @@ import React from 'react';
 
 import MainNav from './MainNav';
 
-import styles from '../sass/footer.module.scss';
+import styles from '../sass/Footer.module.scss';
 import logo from '../images/potwin-construction-logo-white.svg';
 
 const Footer = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../sass/header.module.scss';
+import styles from '../sass/Header.module.scss';
 import logo from '../images/potwin-construction-logo-main.svg';
 import MainNav from './MainNav';
 

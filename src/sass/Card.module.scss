@@ -1,0 +1,53 @@
+@import './variables';
+.card {
+	max-width: 32rem;
+	width: 100%;
+
+	& img {
+		border: .1rem solid $grayDark;
+		width: 100%;
+	}
+}
+
+.cardBody {
+	margin-top: 2.4rem;
+	background-color: $bluePrimary;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2.4rem 1.6rem;
+	color: $white;
+
+	& h4 {
+		margin-bottom: .8rem;
+	}
+
+	& p {
+		margin-bottom: 3.2rem;
+	}
+
+	& a {
+		color: $white;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 1.6rem;
+		font-weight: 600;
+		text-align: right;
+		letter-spacing: .1rem;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.arrow {
+	color: $redSecondary;
+	padding-top: 1.6rem;
+	width: 3.2rem;
+	height: 3.2rem;
+}
+
+box-icon {
+	fill: $redSecondary;
+}

@@ -12,8 +12,10 @@ const Card = ({ imgSrc, imgAlt, title, children, linkURL, linkText }) => {
 				<h4>{title}</h4>
 				<p>{children}</p>
 				<a href={linkURL}>
-					{linkText}
-					<box-icon name='right-arrow-alt' />
+					<div className={styles.cardLink}>
+						{linkText}
+						<box-icon name='right-arrow-alt' />
+					</div>
 				</a>
 			</div>
 		</div>

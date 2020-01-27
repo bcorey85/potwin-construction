@@ -41,11 +41,10 @@
 	}
 }
 
-.arrow {
-	color: $redSecondary;
-	padding-top: 1.6rem;
-	width: 3.2rem;
-	height: 3.2rem;
+.cardLink {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 box-icon {

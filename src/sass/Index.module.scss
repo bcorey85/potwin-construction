@@ -5,7 +5,9 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 100vh;
+	margin: auto;
 	margin-top: -14rem;
+	max-width: 141.8rem;
 
 	& h1 {
 		margin-bottom: 2.4rem;
@@ -46,16 +48,46 @@
 	width: 100%;
 	max-width: 112.8rem;
 	margin: auto;
+	margin-bottom: 14rem;
 }
 
 .services {
 	composes: sectionNarrow;
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 14rem;
 
 	&__cards {
 		display: flex;
 		justify-content: space-between;
 	}
+}
+
+.projects {
+	composes: sectionNarrow;
+}
+
+.secondaryCta {
+	background-color: $bluePrimary;
+	color: $white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 7.2rem;
+	margin-bottom: 14rem;
+
+	& h2 {
+		margin-bottom: 2.4rem;
+	}
+}
+
+.process {
+	composes: sectionNarrow;
+}
+
+.about {
+	composes: sectionNarrow;
+}
+.contact {
+	composes: sectionNarrow;
 }

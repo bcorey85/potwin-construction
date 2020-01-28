@@ -10,10 +10,6 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import YantramanavBold from '../fonts/yantramanav-bold.woff';
-import YantramanavMedium from '../fonts/yantramanav-medium.woff';
-import YantramanavRegular from '../fonts/yantramanav-regular.woff';
-
 function SEO({ description, lang, meta, title }) {
 	const { site } = useStaticQuery(
 		graphql`
@@ -71,29 +67,8 @@ function SEO({ description, lang, meta, title }) {
 					name: `twitter:description`,
 					content: metaDescription
 				}
-			].concat(meta)}>
-			<link
-				rel='preload'
-				as='font'
-				href={YantramanavBold}
-				type='font/woff'
-				crossOrigin='anonymous'
-			/>
-			<link
-				rel='preload'
-				as='font'
-				href={YantramanavRegular}
-				type='font/woff'
-				crossOrigin='anonymous'
-			/>
-			<link
-				rel='preload'
-				as='font'
-				href={YantramanavMedium}
-				type='font/woff'
-				crossOrigin='anonymous'
-			/>
-		</Helmet>
+			].concat(meta)}
+		/>
 	);
 }
 

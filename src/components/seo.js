@@ -69,7 +69,7 @@ function SEO({ description, lang, meta, title }) {
 				}
 			].concat(meta)}>
 			<link
-				href='https://cdn.jsdelivr.net/npm/@openfonts/yantramanav_all@1.44.0/index.min.css'
+				href='https://pagecdn.io/lib/easyfonts/yantramanav.css'
 				rel='stylesheet'
 			/>
 		</Helmet>

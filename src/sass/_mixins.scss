@@ -41,7 +41,8 @@
 	max-width: 112.8rem;
 	margin: auto;
 	margin-bottom: 14.4rem;
-	padding: 0 3.2rem;
+	padding-left: 3.2rem;
+	padding-right: 3.2rem;
 
 	@include respond(1024) {
 		margin-bottom: 11.2rem;
@@ -49,6 +50,11 @@
 
 	@include respond(900) {
 		margin-bottom: 7.2rem;
+	}
+
+	@include respond(500) {
+		padding-left: 1.6rem;
+		padding-right: 1.6rem;
 	}
 }
 
@@ -60,7 +66,8 @@
 	margin-left: -50vw;
 	margin-right: -50vw;
 	margin-bottom: 14.4rem;
-	padding: 0 3.2rem;
+	padding-left: 3.2rem;
+	padding-right: 3.2rem;
 
 	@include respond(1024) {
 		margin-bottom: 11.2rem;
@@ -68,5 +75,10 @@
 
 	@include respond(900) {
 		margin-bottom: 7.2rem;
+	}
+
+	@include respond(500) {
+		padding-left: 1.6rem;
+		padding-right: 1.6rem;
 	}
 }

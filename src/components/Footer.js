@@ -16,8 +16,8 @@ const Footer = () => {
 						className={styles.logo}
 					/>
 					<div className={styles.contact}>
-						<p>999-999-9999</p>
-						<p>email@email.com</p>
+						<p>Phone: 999-999-9999</p>
+						<p>Email: email@email.com</p>
 					</div>
 				</div>
 				<div className={styles.right}>

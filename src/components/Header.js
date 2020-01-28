@@ -13,7 +13,12 @@ const Header = () => {
 					className={styles.logo}
 				/>
 			</a>
-			<MainNav />
+			<div className={styles.nav}>
+				<MainNav />
+			</div>
+			{/* <div className={styles.mobileNav}>
+				<MainNav />
+			</div> */}
 		</header>
 	);
 };

@@ -16,12 +16,15 @@ const Footer = () => {
 						className={styles.logo}
 					/>
 					<div className={styles.contact}>
-						<p>Phone: 999-999-9999</p>
-						<p> Email: email@email.com</p>
+						<p>999-999-9999</p>
+						<p>email@email.com</p>
 					</div>
 				</div>
 				<div className={styles.right}>
-					<MainNav color='white' />
+					<div className={styles.nav}>
+						<MainNav color='white' />
+					</div>
+
 					<div className={styles.sitemeta}>
 						<p>
 							© {new Date().getFullYear()}{' '}

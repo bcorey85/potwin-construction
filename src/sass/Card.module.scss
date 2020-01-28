@@ -1,7 +1,26 @@
 @import './variables';
+@import './mixins';
+
 .card {
 	max-width: 32rem;
 	width: 100%;
+
+	@include respond(768) {
+		max-width: 40rem;
+	}
+
+	&:not(:last-of-type) {
+		margin-right: 2.4rem;
+
+		@include respond(1024) {
+			margin-right: 1.6rem;
+		}
+
+		@include respond(768) {
+			margin-right: 0;
+			margin-bottom: 2.4rem;
+		}
+	}
 
 	& img {
 		border: .1rem solid $grayDark;
@@ -40,6 +59,10 @@
 		&:hover {
 			text-decoration: underline;
 		}
+	}
+
+	@include respond(1024) {
+		margin-top: 1.6rem;
 	}
 }
 

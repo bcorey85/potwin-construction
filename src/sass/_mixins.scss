@@ -1,0 +1,72 @@
+@mixin respond($breakpoint) {
+	@if $breakpoint == 500 {
+		@media only screen and (max-width: 38.25em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == 768 {
+		@media only screen and (max-width: 48em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == 900 {
+		@media only screen and (max-width: 56.25em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == 1024 {
+		@media only screen and (max-width: 64em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == 1280 {
+		@media only screen and (max-width: 80em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == 1440 {
+		@media only screen and (max-width: 90em) {
+			@content;
+		}
+	}
+}
+
+@mixin section-narrow {
+	width: 100%;
+	max-width: 112.8rem;
+	margin: auto;
+	margin-bottom: 14.4rem;
+	padding: 0 3.2rem;
+
+	@include respond(1024) {
+		margin-bottom: 11.2rem;
+	}
+
+	@include respond(900) {
+		margin-bottom: 7.2rem;
+	}
+}
+
+@mixin section-fw {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	margin-bottom: 14.4rem;
+	padding: 0 3.2rem;
+
+	@include respond(1024) {
+		margin-bottom: 11.2rem;
+	}
+
+	@include respond(900) {
+		margin-bottom: 7.2rem;
+	}
+}

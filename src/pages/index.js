@@ -25,17 +25,24 @@ const IndexPage = () => (
 	<Layout>
 		<SEO title='Home' />
 		<section className={styles.hero} id='home'>
-			<div className={styles.cta}>
-				<h1>High quality custom home remodeling in Lincoln, NE</h1>
-				<h5>
-					Rain, snow, or shine, we’ll be there to help transform your
-					home into a comfortable reality.{' '}
-				</h5>
-				<Button href='#contact' type='primary'>
-					Schedule your Consultation
-				</Button>
+			<div className={styles.hero__container}>
+				<div className={styles.hero__cta}>
+					<h1>High quality custom home remodeling in Lincoln, NE</h1>
+					<h5>
+						Rain, snow, or shine, we’ll be there to help transform
+						your home into a comfortable reality.{' '}
+					</h5>
+					<Button href='#contact' type='primary'>
+						Schedule Your Consultation
+					</Button>
+				</div>
+				<div className={styles.hero__img}>
+					<img
+						src={heroImg}
+						alt='Potwin Construction kitchen remodel'
+					/>
+				</div>
 			</div>
-			<img src={heroImg} alt='Potwin Construction kitchen remodel' />
 		</section>
 		<section className={styles.services} id='services'>
 			<SectionHeading title='Services' />
@@ -113,7 +120,13 @@ const IndexPage = () => (
 			<div className={styles.about__container}>
 				<SectionHeading title='About Potwin Construction' />
 				<div className={styles.about__content}>
-					<img src={placeholder} alt='About Potwin Construction' />
+					<div className={styles.about__img}>
+						<img
+							src={placeholder}
+							alt='About Potwin Construction'
+						/>
+					</div>
+
 					<div>
 						<p>
 							Lorem ipsum dolor amet organic poutine VHS aesthetic

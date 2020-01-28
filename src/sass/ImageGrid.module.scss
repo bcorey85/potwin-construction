@@ -1,10 +1,11 @@
 @import './variables';
+@import './mixins';
 
 .grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 2.4rem;
-	grid-auto-rows: 16.8rem;
+	grid-auto-rows: 16.25rem;
 	margin-top: 2.4rem;
 	position: relative;
 
@@ -17,6 +18,17 @@
 		height: 95%;
 		background-color: $grayLight;
 		z-index: -1;
+	}
+	@include respond(1280) {
+		grid-auto-rows: 14.064vw;
+	}
+
+	@include respond(900) {
+		grid-gap: 1.6rem;
+	}
+
+	@include respond(768) {
+		grid-gap: .8rem;
 	}
 }
 

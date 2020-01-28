@@ -1,4 +1,5 @@
 @import './variables';
+@import './mixins';
 
 .footer {
 	grid-column: 1/end;
@@ -14,18 +15,33 @@
 .container {
 	max-width: 141.8rem;
 	width: 100%;
-	padding: 4.8rem 1.6rem;
+	padding: 4.8rem 3.2rem;
 	display: flex;
 	justify-content: space-between;
+
+	@include respond(900) {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .logo {
 	width: 16rem;
 	margin-bottom: 1.6rem;
+
+	@include respond(900) {
+		margin-left: -.8rem;
+	}
 }
 
 .contact {
 	margin-left: 4.2rem;
+
+	@include respond(900) {
+		margin-left: 0;
+		margin-bottom: 4.8rem;
+		text-align: center;
+	}
 }
 
 .right {
@@ -33,8 +49,22 @@
 	flex-direction: column;
 	align-items: flex-end;
 	justify-content: space-between;
+
+	@include respond(900) {
+		align-items: center;
+	}
 }
 
 .sitemeta {
 	text-align: right;
+
+	@include respond(900) {
+		text-align: center;
+	}
+}
+
+.nav {
+	@include respond(900) {
+		margin-bottom: 4.8rem;
+	}
 }

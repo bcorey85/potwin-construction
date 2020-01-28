@@ -6,11 +6,13 @@ import MainNav from './MainNav';
 const Header = () => {
 	return (
 		<header className={styles.header}>
-			<img
-				src={logo}
-				alt='Potwin Construction logo'
-				className={styles.logo}
-			/>
+			<a href='/'>
+				<img
+					src={logo}
+					alt='Potwin Construction logo'
+					className={styles.logo}
+				/>
+			</a>
 			<MainNav />
 		</header>
 	);

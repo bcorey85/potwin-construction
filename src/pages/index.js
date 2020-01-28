@@ -35,10 +35,7 @@ const IndexPage = () => (
 					Schedule your Consultation
 				</Button>
 			</div>
-			<img
-				src={heroImg}
-				alt='Potwin Construction kitchen remodel image'
-			/>
+			<img src={heroImg} alt='Potwin Construction kitchen remodel' />
 		</section>
 		<section className={styles.services} id='services'>
 			<SectionHeading title='Services' />

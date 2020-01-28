@@ -67,8 +67,12 @@ function SEO({ description, lang, meta, title }) {
 					name: `twitter:description`,
 					content: metaDescription
 				}
-			].concat(meta)}
-		/>
+			].concat(meta)}>
+			<link
+				href='https://pagecdn.io/lib/easyfonts/yantramanav.css'
+				rel='stylesheet'
+			/>
+		</Helmet>
 	);
 }
 

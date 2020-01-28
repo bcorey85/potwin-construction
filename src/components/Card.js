@@ -16,6 +16,7 @@ const Card = ({ imgSrc, imgAlt, title, children, linkURL, linkText }) => {
 							data={icon}
 							type='image/svg+xml'
 							className={styles.icon}
+							aria-label='Arrow Icon'
 						/>
 					</div>
 				</a>

@@ -1,7 +1,5 @@
 import React from 'react';
-
-import 'boxicons';
-
+import icon from '../images/icon-right-arrow.svg';
 import styles from '../sass/Card.module.scss';
 
 const Card = ({ imgSrc, imgAlt, title, children, linkURL, linkText }) => {
@@ -14,7 +12,11 @@ const Card = ({ imgSrc, imgAlt, title, children, linkURL, linkText }) => {
 				<a href={linkURL}>
 					<div className={styles.cardLink}>
 						{linkText}
-						<box-icon name='right-arrow-alt' />
+						<object
+							data={icon}
+							type='image/svg+xml'
+							className={styles.icon}
+						/>
 					</div>
 				</a>
 			</div>

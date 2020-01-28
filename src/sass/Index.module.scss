@@ -1,5 +1,22 @@
 @import './variables';
 
+.sectionNarrow {
+	width: 100%;
+	max-width: 112.8rem;
+	margin: auto;
+	margin-bottom: 14rem;
+}
+
+.sectionFullWidth {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	margin-bottom: 14rem;
+}
+
 .hero {
 	display: flex;
 	justify-content: space-between;
@@ -44,13 +61,6 @@
 	max-width: 62.4rem;
 }
 
-.sectionNarrow {
-	width: 100%;
-	max-width: 112.8rem;
-	margin: auto;
-	margin-bottom: 14rem;
-}
-
 .services {
 	composes: sectionNarrow;
 	display: flex;
@@ -67,6 +77,7 @@
 }
 
 .secondaryCta {
+	composes: sectionFullWidth;
 	background-color: $bluePrimary;
 	color: $white;
 	display: flex;
@@ -74,7 +85,6 @@
 	justify-content: center;
 	align-items: center;
 	padding: 7.2rem;
-	margin-bottom: 14rem;
 
 	& h2 {
 		margin-bottom: 2.4rem;
@@ -86,8 +96,37 @@
 }
 
 .about {
-	composes: sectionNarrow;
+	composes: sectionFullWidth;
+	display: flex;
+	justify-content: center;
+	background-color: $grayLight;
+	padding: 6.4rem 1.6rem;
+
+	&__container {
+		composes: sectionNarrow;
+		margin-bottom: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__content {
+		display: flex;
+	}
+
+	& img {
+		margin-right: 3.2rem;
+	}
 }
 .contact {
 	composes: sectionNarrow;
+	display: flex;
+	justify-content: space-between;
+
+	&__items {
+		margin-right: 3.2rem;
+	}
+
+	&__form {
+		flex: 1 1 auto;
+	}
 }

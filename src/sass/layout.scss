@@ -30,34 +30,3 @@ body {
 	grid-template-rows: min-content 1fr 28.8rem;
 	min-height: 100vh;
 }
-
-.btn {
-	font-size: 2rem;
-	font-weight: 500;
-	padding: 1.6rem 4.8rem;
-	text-decoration: none;
-	white-space: nowrap;
-}
-
-.btn--red {
-	background-color: $redSecondary;
-	color: white;
-
-	&:hover {
-		background-color: $bluePrimary;
-	}
-}
-
-.btn-outline {
-	background-color: transparent;
-
-	&--white {
-		border: .1rem solid $white;
-		color: $white;
-
-		&:hover {
-			background-color: $redSecondary;
-			border: .1rem solid $redSecondary;
-		}
-	}
-}

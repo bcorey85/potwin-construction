@@ -1,0 +1,37 @@
+@import './variables';
+
+.btn {
+	font-size: 2rem;
+	font-weight: 500;
+	padding: 1.6rem 4.8rem;
+	text-decoration: none;
+	white-space: nowrap;
+	border: none;
+	cursor: pointer;
+}
+
+.outline {
+	background-color: transparent;
+}
+
+.primary {
+	composes: btn;
+	background-color: $redSecondary;
+	color: white;
+
+	&:hover {
+		background-color: $bluePrimary;
+	}
+}
+
+.outlineWhite {
+	composes: btn outline;
+
+	border: .1rem solid $white;
+	color: $white;
+
+	&:hover {
+		background-color: $redSecondary;
+		border: .1rem solid $redSecondary;
+	}
+}

@@ -1,0 +1,9 @@
+@import './variables';
+
+.item {
+	& strong {
+		color: $bluePrimary;
+		font-weight: 600;
+		margin-right: .8rem;
+	}
+}

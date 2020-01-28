@@ -1,0 +1,32 @@
+@import './variables';
+
+.commentForm {
+	display: flex;
+	flex-direction: column;
+
+	& label {
+		color: $bluePrimary;
+		font-weight: 600;
+	}
+
+	& input {
+		height: 5.6rem;
+		background-color: $grayLight;
+		border: .1rem solid $grayDark;
+		padding: 1.6rem;
+	}
+
+	& textarea {
+		background-color: $grayLight;
+		border: .1rem solid $grayDark;
+		padding: 1.6rem;
+		font-family: Yantramanav;
+		height: 19.2rem;
+	}
+
+	& button {
+		align-self: flex-end;
+		margin-top: 3.2rem;
+		border: none;
+	}
+}

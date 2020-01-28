@@ -6,6 +6,18 @@
 	grid-gap: 2.4rem;
 	grid-auto-rows: 16.8rem;
 	margin-top: 2.4rem;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 2.5%;
+		left: -2.5%;
+		width: 105%;
+		height: 95%;
+		background-color: $grayLight;
+		z-index: -1;
+	}
 }
 
 .img {

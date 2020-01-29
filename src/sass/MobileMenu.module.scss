@@ -1,0 +1,19 @@
+@import './variables';
+
+.icon {
+	height: 2.4rem;
+	width: 3.2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 100;
+	cursor: pointer;
+
+	& span {
+		height: .2rem;
+		width: 3.2rem;
+		background-color: $bluePrimary;
+		transition: all .3s;
+	}
+}

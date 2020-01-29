@@ -26,7 +26,11 @@ h1 {
 	}
 
 	@include respond(425) {
-		font-size: 4rem;
+		font-size: 3.9rem;
+	}
+
+	@include respond(325) {
+		font-size: 3.4rem;
 	}
 }
 
@@ -75,5 +79,9 @@ h5 {
 
 	@include respond(1280) {
 		font-size: 2rem;
+	}
+
+	@include respond(425) {
+		font-size: 1.8rem;
 	}
 }

@@ -27,7 +27,7 @@ const IndexPage = () => (
 		<section className={styles.hero} id='home'>
 			<div className={styles.hero__container}>
 				<div className={styles.hero__cta}>
-					<h1>High quality custom home remodeling in Lincoln, NE</h1>
+					<h1>High-quality custom home remodeling in Lincoln, NE</h1>
 					<h5>
 						Rain, snow, or shine, we’ll be there to help transform
 						your home into a comfortable reality.{' '}
@@ -61,7 +61,7 @@ const IndexPage = () => (
 					imgAlt='Potwin Construction kitchen remodel'
 					linkURL='#contact'
 					linkText='Free Consultation'>
-					Have a room that needs some love? We got you covered!
+					Have a room that needs some love? We've got you covered!
 				</Card>
 				<Card
 					title='Custom Work'
@@ -107,7 +107,7 @@ const IndexPage = () => (
 			</ProcessItem>
 			<ProcessItem
 				number='3'
-				title='Guarenteed Results'
+				title='Guaranteed Results'
 				imgSrc={process3Img}
 				imgAlt='Potwin Construction shower remodel'>
 				After your custom project is complete, we’ll review how we did

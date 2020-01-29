@@ -9,6 +9,14 @@
 		max-width: 40rem;
 	}
 
+	@include respond(500) {
+		max-width: 32rem;
+	}
+
+	@include respond(425) {
+		max-width: 28rem;
+	}
+
 	&:not(:last-of-type) {
 		margin-right: 2.4rem;
 
@@ -45,6 +53,10 @@
 
 	& p {
 		margin-bottom: 3.2rem;
+
+		@include respond(500) {
+			font-size: 1.6rem;
+		}
 	}
 
 	& a {

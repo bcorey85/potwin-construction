@@ -44,10 +44,11 @@
 	}
 
 	&__img {
-		flex: 0 1 67.2rem;
+		flex: 0 1 64rem;
 		margin-right: 1.6rem;
 
 		& img {
+			display: block;
 			width: 100%;
 			height: auto;
 			border: .1rem solid $grayDark;
@@ -64,15 +65,16 @@
 
 		@include respond(1024) {
 			margin-bottom: 4.8rem;
+			margin-top: 2.4rem;
 			flex: 1 1 auto;
 		}
 
 		@include respond(768) {
-			max-width: 80%;
+			max-width: 75%;
 		}
 
 		@include respond(425) {
-			margin-bottom: 3.2rem;
+			margin-bottom: 4.8rem;
 		}
 	}
 
@@ -85,13 +87,21 @@
 		}
 
 		@include respond(1280) {
-			flex: 0 0 46rem;
+			flex: 0 0 46.5rem;
 			margin-right: 4.8rem;
 		}
 
 		@include respond(900) {
 			margin-right: 0;
 			flex: 1 1 auto;
+		}
+
+		@include respond(500) {
+			max-width: 40rem;
+		}
+
+		@include respond(425) {
+			max-width: 30rem;
 		}
 
 		& a {
@@ -106,8 +116,8 @@
 		margin-bottom: 2.4rem;
 		color: $bluePrimary;
 
-		@include respond(425) {
-			margin-bottom: 1.6rem;
+		@include respond(900) {
+			margin-bottom: .8rem;
 		}
 	}
 
@@ -115,7 +125,7 @@
 		margin-bottom: 4.8rem;
 
 		@include respond(425) {
-			margin-bottom: 2.4rem;
+			margin-bottom: 3.2rem;
 			max-width: 33rem;
 		}
 	}
@@ -126,7 +136,7 @@
 		background-repeat: no-repeat;
 		height: 100vh;
 		margin-top: 28rem;
-		clip-path: polygon(0 55%, 100% 35%, 100% 100%, 0% 100%);
+		clip-path: polygon(0 55%, 100% 35%, 100% 100%, 0 100%);
 		width: 100vw;
 		position: absolute;
 		top: 0;
@@ -156,7 +166,7 @@
 			clip-path: polygon(0 40%, 100% 35%, 100% 100%, 0% 100%);
 		}
 
-		@include respond(325) {
+		@include respond(350) {
 			height: 150vh;
 			clip-path: polygon(0 40%, 100% 35%, 100% 100%, 0% 100%);
 		}
@@ -233,8 +243,8 @@
 		flex-direction: column;
 
 		@include respond(500) {
-			padding-left: 1.6rem;
-			padding-right: 1.6rem;
+			padding-left: 0rem;
+			padding-right: 0rem;
 		}
 	}
 
@@ -260,7 +270,9 @@
 		}
 
 		& img {
+			display: block;
 			width: 100%;
+			height: auto;
 		}
 	}
 }

@@ -75,7 +75,6 @@ const IndexPage = () => (
 		</section>
 		<section className={styles.projects} id='projects'>
 			<SectionHeading title='Projects' />
-			<p>Here's a small collection of our favorite recent projects.</p>
 			<ImageGrid />
 		</section>
 		<section className={styles.secondaryCta}>

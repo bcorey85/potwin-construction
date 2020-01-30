@@ -13,10 +13,6 @@
 		max-width: 32rem;
 	}
 
-	@include respond(425) {
-		max-width: 28rem;
-	}
-
 	&:not(:last-of-type) {
 		margin-right: 2.4rem;
 

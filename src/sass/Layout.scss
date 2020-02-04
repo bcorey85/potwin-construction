@@ -35,3 +35,10 @@ body {
 		grid-template-columns: 1fr;
 	}
 }
+
+.anchor {
+	display: block;
+	height: 12rem;
+	margin-top: 12rem;
+	visibility: hidden;
+}

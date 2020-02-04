@@ -111,7 +111,8 @@ const IndexPage = () => {
 					</div>
 				</div>
 			</section>
-			<section className={styles.services} id='services'>
+			<section className={styles.services}>
+				<a id='services' className='anchor' />
 				<SectionHeading title='Services' />
 				<div className={styles.services__cards}>
 					<Card
@@ -140,7 +141,8 @@ const IndexPage = () => {
 					</Card>
 				</div>
 			</section>
-			<section className={styles.projects} id='projects'>
+			<section className={styles.projects}>
+				<a id='projects' className='anchor' />
 				<SectionHeading title='Projects' />
 				<ImageGrid />
 			</section>
@@ -150,7 +152,8 @@ const IndexPage = () => {
 					Let us know!
 				</Button>
 			</section>
-			<section className={styles.process} id='process'>
+			<section className={styles.process}>
+				<a id='process' className='anchor' />
 				<SectionHeading title='Process' />
 				<ProcessItem
 					number='1'
@@ -181,7 +184,8 @@ const IndexPage = () => {
 					with your new space.
 				</ProcessItem>
 			</section>
-			<section className={styles.about} id='about'>
+			<section className={styles.about}>
+				<a id='about' className='anchor' />
 				<div className={styles.about__container}>
 					<SectionHeading title='About Potwin Construction' />
 					<div className={styles.about__content}>
@@ -222,7 +226,8 @@ const IndexPage = () => {
 					</div>
 				</div>
 			</section>
-			<section className={styles.contact} id='contact'>
+			<section className={styles.contact}>
+				<a id='contact' className='anchor' />
 				<div className={styles.contact__items}>
 					<SectionHeading title='Ready for Your Free Consultation?' />
 					<Banner>Let's Talk!</Banner>

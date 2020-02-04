@@ -17,7 +17,8 @@ const MobileMenu = () => {
 				onClick={toggleMenu}
 				role='button'
 				tabIndex={0}
-				onKeyDown={toggleMenu}>
+				onKeyDown={toggleMenu}
+				aria-label='Mobile Navigation'>
 				<span />
 				<span />
 				<span />

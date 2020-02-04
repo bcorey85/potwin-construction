@@ -1,9 +1,14 @@
 @import './variables';
+@import './mixins';
 
 .sectionHeading {
-	margin-bottom: 2.4rem;
+	margin-bottom: 5.6rem;
 	color: $bluePrimary;
 	margin-left: -1.7rem;
 	padding-left: .8rem;
 	border-left: .8rem solid $redSecondary;
+
+	@include respond(600) {
+		margin-bottom: 3.2rem;
+	}
 }

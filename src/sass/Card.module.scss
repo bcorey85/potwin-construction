@@ -9,7 +9,7 @@
 		max-width: 40rem;
 	}
 
-	@include respond(500) {
+	@include respond(600) {
 		max-width: 32rem;
 	}
 
@@ -27,30 +27,29 @@
 	}
 
 	& img {
-		border: .1rem solid $grayDark;
+		border-top: 1.6rem solid $bluePrimary;
 		width: 100%;
 		display: block;
 	}
 }
 
 .cardBody {
-	margin-top: 2.4rem;
 	background-color: $bluePrimary;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 2.4rem 1.6rem;
+	padding: 2.4rem;
 	color: $white;
 	font-size: 1.8rem;
 
 	& h4 {
-		margin-bottom: .8rem;
+		margin-bottom: 1.6rem;
 	}
 
 	& p {
 		margin-bottom: 3.2rem;
 
-		@include respond(500) {
+		@include respond(600) {
 			font-size: 1.6rem;
 		}
 	}
@@ -67,10 +66,6 @@
 		&:hover {
 			text-decoration: underline;
 		}
-	}
-
-	@include respond(1024) {
-		margin-top: 1.6rem;
 	}
 }
 

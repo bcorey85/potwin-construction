@@ -100,9 +100,8 @@ const IndexPage = () => (
 				imgSrc={process2Img}
 				imgAlt='Potwin Construction patio construction'>
 				We’ll work with you to create a design that fits your unique
-				needs and style. Once the plan is complete, we’ll work on
-				sourcing high quality materials that help us get the job done
-				right.
+				needs and style. Once the plan is complete, we’ll source high
+				quality materials that help us get the job done right.
 			</ProcessItem>
 			<ProcessItem
 				number='3'

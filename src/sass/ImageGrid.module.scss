@@ -4,7 +4,7 @@
 .grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 2.4rem;
+	grid-gap: 1.6rem;
 	grid-auto-rows: 16.25rem;
 	margin-top: 2.4rem;
 	position: relative;
@@ -21,10 +21,6 @@
 	}
 	@include respond(1280) {
 		grid-auto-rows: 14.064vw;
-	}
-
-	@include respond(900) {
-		grid-gap: 1.6rem;
 	}
 
 	@include respond(768) {

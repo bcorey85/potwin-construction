@@ -20,7 +20,7 @@
 		background-color: $white;
 	}
 
-	@include respond(500) {
+	@include respond(600) {
 		padding: 1.6rem 1.6rem;
 	}
 }
@@ -32,7 +32,7 @@
 .logo {
 	width: 16rem;
 
-	@include respond(500) {
+	@include respond(600) {
 		width: 12.8rem;
 	}
 }

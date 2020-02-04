@@ -7,7 +7,12 @@ import rightArrow from '../images/bxs-right-arrow.svg';
 
 const Modal = props => {
 	return (
-		<div className={styles.modal}>
+		<div
+			className={styles.modal}
+			onClick={props.toggleModal}
+			onKeyDown={props.toggleModal}
+			role='button'
+			tabIndex={0}>
 			<div className={styles.modal__nav}>
 				<img src={logo} alt='Potwin Construction logo' />
 				<div
@@ -22,8 +27,8 @@ const Modal = props => {
 			</div>
 			<div className={styles.container}>
 				<div
-					onClick={() => props.handleCarousel('dec')}
-					onKeyDown={() => props.handleCarousel('dec')}
+					onClick={e => props.handleCarousel(e, 'dec')}
+					onKeyDown={e => props.handleCarousel(e, 'dec')}
 					role='button'
 					tabIndex={0}
 					className={styles.arrow}>
@@ -32,8 +37,8 @@ const Modal = props => {
 
 				<div className={styles.modal__content}>{props.children}</div>
 				<div
-					onClick={() => props.handleCarousel('inc')}
-					onKeyDown={() => props.handleCarousel('inc')}
+					onClick={e => props.handleCarousel(e, 'inc')}
+					onKeyDown={e => props.handleCarousel(e, 'inc')}
 					role='button'
 					tabIndex={0}
 					className={styles.arrow}>

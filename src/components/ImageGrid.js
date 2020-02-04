@@ -126,7 +126,7 @@ const ImageGrid = () => {
 		const imageIndex = e.target.title - 1;
 		setCurrentIndex(imageIndex);
 		setCurrentImage(imageArray[imageIndex].childImageSharp.fixed);
-		console.log(currentImage);
+
 		setModalShowing(true);
 	};
 
@@ -136,7 +136,8 @@ const ImageGrid = () => {
 		setModalShowing(false);
 	};
 
-	const handleCarousel = direction => {
+	const handleCarousel = (e, direction) => {
+		e.stopPropagation();
 		if (currentIndex < imageArray.length - 1 && direction === 'inc') {
 			setCurrentIndex(currentIndex + 1);
 			setCurrentImage(imageArray[currentIndex + 1].childImageSharp.fixed);

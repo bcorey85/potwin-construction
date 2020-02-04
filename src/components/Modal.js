@@ -20,23 +20,25 @@ const Modal = props => {
 					<span />
 				</div>
 			</div>
-			<div
-				onClick={() => props.handleCarousel('dec')}
-				onKeyDown={() => props.handleCarousel('dec')}
-				role='button'
-				tabIndex={0}
-				className={styles.arrow}>
-				<img src={leftArrow} alt='Left arrow button' />
-			</div>
+			<div className={styles.container}>
+				<div
+					onClick={() => props.handleCarousel('dec')}
+					onKeyDown={() => props.handleCarousel('dec')}
+					role='button'
+					tabIndex={0}
+					className={styles.arrow}>
+					<img src={leftArrow} alt='Left arrow button' />
+				</div>
 
-			<div className={styles.modal__content}>{props.children}</div>
-			<div
-				onClick={() => props.handleCarousel('inc')}
-				onKeyDown={() => props.handleCarousel('inc')}
-				role='button'
-				tabIndex={0}
-				className={styles.arrow}>
-				<img src={rightArrow} alt='Right arrow button' />
+				<div className={styles.modal__content}>{props.children}</div>
+				<div
+					onClick={() => props.handleCarousel('inc')}
+					onKeyDown={() => props.handleCarousel('inc')}
+					role='button'
+					tabIndex={0}
+					className={styles.arrow}>
+					<img src={rightArrow} alt='Right arrow button' />
+				</div>
 			</div>
 		</div>
 	);

@@ -5,6 +5,8 @@
 	grid-row: 2/3;
 
 	@include respond(900) {
+		grid-column: 1/end;
+		grid-row: 1/end;
 		margin-top: 6.8rem;
 	}
 }

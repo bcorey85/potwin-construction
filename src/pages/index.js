@@ -23,7 +23,7 @@ const indexImageQuery = graphql`
 		) {
 			childImageSharp {
 				fluid(quality: 100) {
-					...GatsbyImageSharpFluid_withWebp_tracedSVG
+					...GatsbyImageSharpFluid_withWebp
 				}
 			}
 		}
@@ -32,7 +32,7 @@ const indexImageQuery = graphql`
 		) {
 			childImageSharp {
 				fluid(quality: 100) {
-					...GatsbyImageSharpFluid_withWebp_tracedSVG
+					...GatsbyImageSharpFluid_withWebp
 				}
 			}
 		}
@@ -41,7 +41,7 @@ const indexImageQuery = graphql`
 		) {
 			childImageSharp {
 				fluid(quality: 100) {
-					...GatsbyImageSharpFluid_withWebp_tracedSVG
+					...GatsbyImageSharpFluid_withWebp
 				}
 			}
 		}
@@ -50,7 +50,7 @@ const indexImageQuery = graphql`
 		) {
 			childImageSharp {
 				fluid(quality: 100) {
-					...GatsbyImageSharpFluid_withWebp_tracedSVG
+					...GatsbyImageSharpFluid_withWebp
 				}
 			}
 		}
@@ -59,7 +59,7 @@ const indexImageQuery = graphql`
 		) {
 			childImageSharp {
 				fluid(quality: 100) {
-					...GatsbyImageSharpFluid_withWebp_tracedSVG
+					...GatsbyImageSharpFluid_withWebp
 				}
 			}
 		}
@@ -68,7 +68,7 @@ const indexImageQuery = graphql`
 		) {
 			childImageSharp {
 				fluid(quality: 100) {
-					...GatsbyImageSharpFluid_withWebp_tracedSVG
+					...GatsbyImageSharpFluid_withWebp
 				}
 			}
 		}
@@ -77,7 +77,7 @@ const indexImageQuery = graphql`
 		) {
 			childImageSharp {
 				fluid(quality: 100) {
-					...GatsbyImageSharpFluid_withWebp_tracedSVG
+					...GatsbyImageSharpFluid_withWebp
 				}
 			}
 		}
@@ -86,11 +86,12 @@ const indexImageQuery = graphql`
 
 const IndexPage = () => {
 	const images = useStaticQuery(indexImageQuery);
+
 	return (
 		<Layout>
 			<SEO title='Home' />
 			<section className={styles.hero}>
-				<a id='home' className='anchor-top' />
+				<div id='home' className='anchor-top' />
 				<div className={styles.hero__container}>
 					<div className={styles.hero__cta}>
 						<h1>
@@ -113,7 +114,7 @@ const IndexPage = () => {
 				</div>
 			</section>
 			<section className={styles.services}>
-				<a id='services' className='anchor' />
+				<div id='services' className='anchor' />
 				<SectionHeading title='Services' />
 				<div className={styles.services__cards}>
 					<Card
@@ -143,7 +144,7 @@ const IndexPage = () => {
 				</div>
 			</section>
 			<section className={styles.projects}>
-				<a id='projects' className='anchor' />
+				<div id='projects' className='anchor' />
 				<SectionHeading title='Projects' />
 				<ImageGrid />
 			</section>
@@ -154,7 +155,7 @@ const IndexPage = () => {
 				</Button>
 			</section>
 			<section className={styles.process}>
-				<a id='process' className='anchor' />
+				<div id='process' className='anchor' />
 				<SectionHeading title='Process' />
 				<ProcessItem
 					number='1'
@@ -186,7 +187,7 @@ const IndexPage = () => {
 				</ProcessItem>
 			</section>
 			<section className={styles.about}>
-				<a id='about' className='anchor' />
+				<div id='about' className='anchor' />
 				<div className={styles.about__container}>
 					<SectionHeading title='About Potwin Construction' />
 					<div className={styles.about__content}>
@@ -228,7 +229,7 @@ const IndexPage = () => {
 				</div>
 			</section>
 			<section className={styles.contact}>
-				<a id='contact' className='anchor' />
+				<div id='contact' className='anchor' />
 				<div className={styles.contact__items}>
 					<SectionHeading title='Ready for Your Free Consultation?' />
 					<Banner>Let's Talk!</Banner>

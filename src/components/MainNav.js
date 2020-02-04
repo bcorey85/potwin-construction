@@ -45,6 +45,14 @@ const MainNav = ({ color, mobileNav, menuOpen, toggleMenu }) => {
 					</li>
 					<li>
 						<a
+							href='#about'
+							className={styles.navlink}
+							onClick={toggleMenu}>
+							About
+						</a>
+					</li>
+					<li>
+						<a
 							href='#contact'
 							className={styles.navlink}
 							onClick={toggleMenu}>
@@ -77,6 +85,14 @@ const MainNav = ({ color, mobileNav, menuOpen, toggleMenu }) => {
 				<li>
 					<a href='#process' className={styles.navlink}>
 						Process
+					</a>
+				</li>
+				<li>
+					<a
+						href='#about'
+						className={styles.navlink}
+						onClick={toggleMenu}>
+						About
 					</a>
 				</li>
 				<li>

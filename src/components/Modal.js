@@ -2,7 +2,6 @@ import React from 'react';
 
 import logo from '../images/potwin-construction-logo-white.svg';
 import styles from '../sass/Modal.module.scss';
-import xIcon from '../images/bx-x.svg';
 import leftArrow from '../images/bxs-left-arrow.svg';
 import rightArrow from '../images/bxs-right-arrow.svg';
 
@@ -17,7 +16,8 @@ const Modal = props => {
 					role='button'
 					tabIndex={0}
 					onKeyDown={props.toggleModal}>
-					<img src={xIcon} alt='X Icon' />
+					<span />
+					<span />
 				</div>
 			</div>
 			<div

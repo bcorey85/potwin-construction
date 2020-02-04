@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'gatsby-image';
 
 import Banner from './Banner';
 
@@ -15,7 +16,7 @@ const Process = ({ number, title, children, imgSrc, imgAlt }) => {
 			</div>
 
 			<div className={styles.image}>
-				<img src={imgSrc} alt={imgAlt} />
+				<Image fluid={imgSrc} alt={imgAlt} />
 			</div>
 		</div>
 	);

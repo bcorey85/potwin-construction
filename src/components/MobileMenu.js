@@ -12,7 +12,12 @@ const MobileMenu = () => {
 
 	return (
 		<React.Fragment>
-			<div className={styles.icon} onClick={toggleMenu}>
+			<div
+				className={styles.icon}
+				onClick={toggleMenu}
+				role='button'
+				tabIndex={0}
+				onKeyDown={toggleMenu}>
 				<span />
 				<span />
 				<span />

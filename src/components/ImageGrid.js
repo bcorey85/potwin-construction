@@ -112,15 +112,20 @@ const imageGridQuery = graphql`
 
 const ImageGrid = () => {
 	const images = useStaticQuery(imageGridQuery);
+	const imageArray = Object.values(images);
+
 	const [ modalShowing, setModalShowing ] = useState(false);
 	const [ currentImage, setCurrentImage ] = useState(
-		images.grid1.childImageSharp.fixed
+		imageArray[0].childImageSharp.fixed
 	);
+	const [ currentIndex, setCurrentIndex ] = useState(0);
 
 	const openModal = e => {
 		document.documentElement.style.overflowY = 'hidden';
 		document.documentElement.style.marginRight = '15px';
-		setCurrentImage(images[e.target.title].childImageSharp.fixed);
+		const imageIndex = e.target.title - 1;
+		setCurrentIndex(imageIndex);
+		setCurrentImage(imageArray[imageIndex].childImageSharp.fixed);
 		console.log(currentImage);
 		setModalShowing(true);
 	};
@@ -131,10 +136,28 @@ const ImageGrid = () => {
 		setModalShowing(false);
 	};
 
+	const handleCarousel = direction => {
+		if (currentIndex < imageArray.length - 1 && direction === 'inc') {
+			setCurrentIndex(currentIndex + 1);
+			setCurrentImage(imageArray[currentIndex + 1].childImageSharp.fixed);
+		} else if (currentIndex > 0 && direction === 'dec') {
+			setCurrentIndex(currentIndex - 1);
+			setCurrentImage(imageArray[currentIndex - 1].childImageSharp.fixed);
+		} else if (currentIndex === 0 && direction === 'dec') {
+			setCurrentIndex(imageArray.length - 1);
+			setCurrentImage(
+				imageArray[imageArray.length - 1].childImageSharp.fixed
+			);
+		} else {
+			setCurrentIndex(0);
+			setCurrentImage(imageArray[0].childImageSharp.fixed);
+		}
+	};
+
 	return (
 		<div className={styles.grid}>
 			{modalShowing && (
-				<Modal toggleModal={closeModal}>
+				<Modal toggleModal={closeModal} handleCarousel={handleCarousel}>
 					<Image
 						fixed={currentImage}
 						imgStyle={{
@@ -159,7 +182,7 @@ const ImageGrid = () => {
 						height: '100%',
 						width: '100%'
 					}}
-					title='grid1'
+					title='1'
 				/>
 			</div>
 
@@ -176,7 +199,7 @@ const ImageGrid = () => {
 						height: '100%',
 						width: '100%'
 					}}
-					title='grid2'
+					title='2'
 				/>
 			</div>
 			<div
@@ -192,7 +215,7 @@ const ImageGrid = () => {
 						height: '100%',
 						width: '100%'
 					}}
-					title='grid3'
+					title='3'
 				/>
 			</div>
 			<div
@@ -208,7 +231,7 @@ const ImageGrid = () => {
 						height: '100%',
 						width: '100%'
 					}}
-					title='grid4'
+					title='4'
 				/>
 			</div>
 			<div
@@ -224,7 +247,7 @@ const ImageGrid = () => {
 						height: '100%',
 						width: '100%'
 					}}
-					title='grid5'
+					title='5'
 				/>
 			</div>
 			<div
@@ -240,7 +263,7 @@ const ImageGrid = () => {
 						height: '100%',
 						width: '100%'
 					}}
-					title='grid6'
+					title='6'
 				/>
 			</div>
 			<div
@@ -256,7 +279,7 @@ const ImageGrid = () => {
 						height: '100%',
 						width: '100%'
 					}}
-					title='grid7'
+					title='7'
 				/>
 			</div>
 			<div
@@ -272,7 +295,7 @@ const ImageGrid = () => {
 						height: '100%',
 						width: '100%'
 					}}
-					title='grid8'
+					title='8'
 				/>
 			</div>
 			<div
@@ -288,7 +311,7 @@ const ImageGrid = () => {
 						height: '100%',
 						width: '100%'
 					}}
-					title='grid9'
+					title='9'
 				/>
 			</div>
 			<div
@@ -304,7 +327,7 @@ const ImageGrid = () => {
 						height: '100%',
 						width: '100%'
 					}}
-					title='grid10'
+					title='10'
 				/>
 			</div>
 			<div
@@ -320,7 +343,7 @@ const ImageGrid = () => {
 						height: '100%',
 						width: '100%'
 					}}
-					title='grid11'
+					title='11'
 				/>
 			</div>
 			<div
@@ -336,7 +359,7 @@ const ImageGrid = () => {
 						height: '100%',
 						width: '100%'
 					}}
-					title='grid12'
+					title='12'
 				/>
 			</div>
 		</div>

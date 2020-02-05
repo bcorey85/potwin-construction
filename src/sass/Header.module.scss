@@ -11,17 +11,13 @@
 	grid-row: 1/2;
 
 	@include respond(900) {
-		padding: 1.6rem 3.2rem;
+		padding: 1.6rem;
 		position: fixed;
 		z-index: 80;
 		width: 100%;
 		top: 0;
 		left: 0;
 		background-color: $white;
-	}
-
-	@include respond(600) {
-		padding: 1.6rem 1.6rem;
 	}
 }
 
@@ -32,7 +28,7 @@
 .logo {
 	width: 16rem;
 
-	@include respond(600) {
+	@include respond(900) {
 		width: 12.8rem;
 	}
 }

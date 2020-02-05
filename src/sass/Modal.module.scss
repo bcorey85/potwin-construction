@@ -25,27 +25,31 @@
 	overflow: hidden;
 	max-width: 100rem;
 	padding: 1.6rem;
+
+	@include respond(900) {
+		max-width: 60rem;
+	}
 }
 
 .modal__nav {
-	background-color: $bluePrimary;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 2;
 
 	display: flex;
 	justify-content: space-between;
 	padding: 1.6rem 3.2rem;
 
-	@include respond(600) {
+	@include respond(900) {
 		padding: 1.6rem;
 	}
 
 	& img {
 		width: 16rem;
 
-		@include respond(600) {
+		@include respond(900) {
 			width: 12.8rem;
 		}
 	}

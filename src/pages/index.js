@@ -167,7 +167,6 @@ const IndexPage = () => {
 				<div id='contact' className='anchor' />
 				<div className={styles.contact__items}>
 					<SectionHeading title='Ready for Your Free Quote?' />
-					<h4>Let's Talk!</h4>
 					<ContactItem label='Phone' item='999-999-9999' />
 					<ContactItem label='Email' item='email@email.com' />
 					<p />

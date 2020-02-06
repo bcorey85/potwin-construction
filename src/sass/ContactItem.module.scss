@@ -1,9 +1,12 @@
 @import './variables';
 
 .item {
-	& strong {
+	& h4 {
 		color: $bluePrimary;
-		font-weight: 600;
-		margin-right: .8rem;
+		margin-bottom: .8rem;
+	}
+
+	&:not(last-of-type) {
+		margin-bottom: 2.4rem;
 	}
 }

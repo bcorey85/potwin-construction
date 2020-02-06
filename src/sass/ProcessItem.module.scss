@@ -3,18 +3,19 @@
 
 .process {
 	display: flex;
+	align-items: flex-end;
 	justify-content: space-between;
 	position: relative;
 
 	&:not(:last-of-type) {
-		margin-bottom: 10.4rem;
+		margin-bottom: 12rem;
 
 		@include respond(900) {
-			margin-bottom: 2.4rem;
+			margin-bottom: 8rem;
 		}
 
 		@include respond(600) {
-			margin-bottom: 1.6rem;
+			margin-bottom: 6.4rem;
 		}
 	}
 
@@ -32,50 +33,48 @@
 
 .content {
 	display: flex;
-	position: relative;
-
-	@include respond(900) {
-		flex-direction: column-reverse;
-		align-items: center;
-		margin-bottom: 8.4rem;
-	}
+	max-width: 50rem;
+	margin-right: 2.4rem;
 }
 
 .number {
 	font-size: 24rem;
 	color: $grayLight;
 	line-height: .65;
-	margin-right: 2.4rem;
+	font-weight: 500;
 
 	@include respond(900) {
 		position: absolute;
-		margin-right: 0;
 		right: 0;
-		top: 6.4rem;
+		top: 0rem;
 		z-index: -1;
-		right: -1.2rem;
-		font-weight: 500;
+		right: -2rem;
+		font-weight: 400;
 	}
 }
 
 .description {
-	margin-right: 3.2rem;
-	flex: 0 1 59rem;
+	position: relative;
+
+	& h4 {
+		color: $bluePrimary;
+		margin-bottom: .8rem;
+	}
 
 	@include respond(900) {
+		margin-top: 4rem;
 		margin-right: 0;
 		flex: 1 1 auto;
 	}
 }
 
 .image {
-	flex: 1 0 36rem;
-	max-width: 36rem;
-	max-height: 20.8rem;
-	box-shadow: 1.6rem 1.6rem 0 $grayLight;
+	max-width: 48rem;
+	width: 100%;
 
 	& img {
-		border: .1rem solid $grayDark;
+		border-top: .8rem solid $bluePrimary;
+		border-bottom: .8rem solid $bluePrimary;
 	}
 
 	@include respond(900) {

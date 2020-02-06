@@ -6,7 +6,10 @@ import styles from '../sass/Card.module.scss';
 const Card = ({ imgSrc, imgAlt, title, children, linkURL, linkText }) => {
 	return (
 		<div className={styles.card}>
-			<Image fluid={imgSrc} alt={imgAlt} />
+			<div className={styles.cardImg}>
+				<Image fluid={imgSrc} alt={imgAlt} />
+			</div>
+
 			<div className={styles.cardBody}>
 				<h4>{title}</h4>
 				<p>{children}</p>

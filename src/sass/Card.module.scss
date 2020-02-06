@@ -4,13 +4,20 @@
 .card {
 	max-width: 32rem;
 	width: 100%;
+	box-shadow: $shadow;
+	background-color: $white;
+	cursor: pointer;
+	text-decoration: none;
 
-	@include respond(768) {
-		max-width: 40rem;
+	@include respond(900) {
+		max-width: 100%;
+		display: flex;
+		flex-direction: row-reverse;
 	}
 
 	@include respond(600) {
-		max-width: 32rem;
+		max-width: 40rem;
+		display: block;
 	}
 
 	&:not(:last-of-type) {
@@ -20,51 +27,76 @@
 			margin-right: 1.6rem;
 		}
 
-		@include respond(768) {
+		@include respond(900) {
 			margin-right: 0;
-			margin-bottom: 2.4rem;
+			margin-bottom: 3.2rem;
 		}
+	}
+}
+
+.cardImg {
+	width: 100%;
+
+	@include respond(900) {
+		max-width: 24rem;
+	}
+
+	@include respond(600) {
+		max-width: none;
 	}
 
 	& img {
 		border-top: .8rem solid $bluePrimary;
+		border-bottom: .8rem solid $bluePrimary;
 		width: 100%;
 		display: block;
+
+		@include respond(900) {
+			border-left: .8rem solid $bluePrimary;
+			border-right: .8rem solid $bluePrimary;
+			border-top: none;
+			border-bottom: none;
+		}
+
+		@include respond(600) {
+			border-left: none;
+			border-right: none;
+			border-top: .8rem solid $bluePrimary;
+			border-bottom: .8rem solid $bluePrimary;
+		}
 	}
 }
 
 .cardBody {
-	background-color: $bluePrimary;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 2.4rem;
-	color: $white;
-	font-size: 1.8rem;
+	color: $black;
+	font-size: 2rem;
+	padding: 2.4rem 1.6rem;
+	text-decoration: none;
+
+	@include respond(900) {
+		margin-top: 0;
+		margin-right: 3.2rem;
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	@include respond(600) {
+		justify-content: flex-start;
+		margin-right: 0;
+	}
 
 	& h4 {
-		margin-bottom: 1.6rem;
+		margin-bottom: .8rem;
+		color: $bluePrimary;
 	}
 
 	& p {
-		margin-bottom: 3.2rem;
+		margin-bottom: 4.8rem;
 
 		@include respond(600) {
-			font-size: 1.6rem;
-		}
-	}
-
-	& a {
-		color: $white;
-		text-decoration: none;
-		text-transform: uppercase;
-		font-size: 1.6rem;
-		font-weight: 600;
-		text-align: right;
-		letter-spacing: .1rem;
-
-		&:hover {
-			text-decoration: underline;
+			margin-bottom: 3.2rem;
 		}
 	}
 }
@@ -73,6 +105,17 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	color: $bluePrimary;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	font-weight: 600;
+	text-align: right;
+	letter-spacing: .06rem;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .icon {

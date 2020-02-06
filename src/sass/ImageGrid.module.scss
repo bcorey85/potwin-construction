@@ -4,7 +4,7 @@
 .grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 1.6rem;
+	grid-gap: 2.4rem;
 	grid-auto-rows: 24rem;
 	margin-top: 2.4rem;
 	position: relative;
@@ -14,7 +14,18 @@
 		position: absolute;
 		top: 2.5%;
 		left: -2.5%;
-		width: 105%;
+		width: 3.5%;
+		height: 95%;
+		background-color: $grayLight;
+		z-index: -1;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 2.5%;
+		right: -2.5%;
+		width: 3.5%;
 		height: 95%;
 		background-color: $grayLight;
 		z-index: -1;
@@ -23,15 +34,23 @@
 		grid-auto-rows: 20vw;
 	}
 
-	@include respond(768) {
+	@include respond(900) {
+		grid-gap: 1.6rem;
+	}
+
+	@include respond(600) {
 		grid-gap: .8rem;
 	}
 }
 
 .img {
-	border: .1rem solid $grayDark;
 	cursor: pointer;
 	overflow: hidden;
+	transition: opacity .2s;
+}
+
+.img:hover {
+	opacity: .6;
 }
 
 .img1 {

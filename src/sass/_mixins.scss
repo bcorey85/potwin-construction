@@ -53,8 +53,11 @@
 	max-width: 112.8rem;
 	margin: auto;
 	margin-bottom: 10.4rem;
-	padding-left: 3.2rem;
-	padding-right: 3.2rem;
+
+	@include respond(1440) {
+		padding-left: 3.2rem;
+		padding-right: 3.2rem;
+	}
 
 	@include respond(1024) {
 		margin-bottom: 11.2rem;
@@ -78,8 +81,11 @@
 	margin-left: -50vw;
 	margin-right: -50vw;
 	margin-bottom: 10.4rem;
-	padding-left: 3.2rem;
-	padding-right: 3.2rem;
+
+	@include respond(1440) {
+		padding-left: 3.2rem;
+		padding-right: 3.2rem;
+	}
 
 	@include respond(1024) {
 		margin-bottom: 11.2rem;

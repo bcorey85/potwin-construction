@@ -21,8 +21,8 @@ const IndexPage = () => {
 	return (
 		<Layout>
 			<SEO title='Home' />
+			<div id='home' className='anchor-top' />
 			<section className={styles.hero}>
-				<div id='home' className='anchor-top' />
 				<div className={styles.hero__container}>
 					<div className={styles.hero__cta}>
 						<h1>

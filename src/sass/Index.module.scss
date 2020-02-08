@@ -68,10 +68,11 @@
 			margin-top: 2.4rem;
 			flex: 1 1 auto;
 			width: 100%;
+			box-shadow: .8rem .8rem 0 $bluePrimary;
 		}
 
 		@include respond(768) {
-			max-width: 75%;
+			max-width: 80%;
 		}
 
 		@include respond(425) {
@@ -130,7 +131,6 @@
 		margin-bottom: 4.8rem;
 
 		@include respond(425) {
-			margin-bottom: 3.2rem;
 			max-width: 33rem;
 		}
 	}

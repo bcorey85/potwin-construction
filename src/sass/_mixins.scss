@@ -54,7 +54,7 @@
 	margin: auto;
 	margin-bottom: 10.4rem;
 
-	@include respond(1440) {
+	@include respond(1280) {
 		padding-left: 3.2rem;
 		padding-right: 3.2rem;
 	}
@@ -82,10 +82,10 @@
 	margin-right: -50vw;
 	margin-bottom: 10.4rem;
 
-	@include respond(1440) {
-		padding-left: 3.2rem;
-		padding-right: 3.2rem;
-	}
+	// @include respond(1280) {
+	// 	padding-left: 3.2rem;
+	// 	padding-right: 3.2rem;
+	// }
 
 	@include respond(1024) {
 		margin-bottom: 11.2rem;
@@ -95,8 +95,8 @@
 		margin-bottom: 7.2rem;
 	}
 
-	@include respond(600) {
-		padding-left: 2.4rem;
-		padding-right: 2.4rem;
-	}
+	// @include respond(600) {
+	// 	padding-left: 2.4rem;
+	// 	padding-right: 2.4rem;
+	// }
 }

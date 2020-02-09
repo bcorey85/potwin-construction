@@ -43,6 +43,7 @@
 
 	@include respond(600) {
 		max-width: none;
+		height: 24rem;
 	}
 
 	& img {

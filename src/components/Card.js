@@ -7,7 +7,7 @@ const Card = ({ imgSrc, imgAlt, title, children, linkURL, linkText }) => {
 	return (
 		<div className={styles.card}>
 			<div className={styles.cardImg}>
-				<Image fluid={imgSrc} alt={imgAlt} />
+				<Image fluid={imgSrc} alt={imgAlt} style={{ height: '100%' }} />
 			</div>
 
 			<div className={styles.cardBody}>

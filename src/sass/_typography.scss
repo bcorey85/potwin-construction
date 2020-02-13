@@ -6,10 +6,6 @@ body {
 	color: $black;
 	line-height: 1.6;
 	font-weight: 400;
-
-	@include respond(600) {
-		font-size: 1.8rem;
-	}
 }
 
 h1 {

@@ -165,14 +165,27 @@ const IndexPage = () => {
 			</section>
 			<section className={styles.contact}>
 				<div id='contact' className='anchor' />
-				<div className={styles.contact__items}>
-					<SectionHeading title='Ready for Your Free Quote?' />
-					<ContactItem label='Phone' item='999-999-9999' />
-					<ContactItem label='Email' item='email@email.com' />
-					<p />
-				</div>
-				<div className={styles.contact__form}>
-					<ContactForm />
+				<SectionHeading title='Ready for Your Free Quote?' />
+				<div className={styles.contact__container}>
+					<div className={styles.contact__form}>
+						<ContactForm />
+					</div>
+					<div className={styles.contact__items}>
+						<h4>Contact Us</h4>
+						<ContactItem label='Phone' item='999-999-9999' />
+						<ContactItem
+							label='Email'
+							item='email@email.com'
+							href='mailto:email@email.com'
+						/>
+
+						<ContactItem
+							label='Facebook'
+							item='/PotwinBuilds'
+							href='https://www.facebook.com/PotwinBuilds/'
+						/>
+						<p />
+					</div>
 				</div>
 			</section>
 		</Layout>

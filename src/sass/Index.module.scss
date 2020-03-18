@@ -160,15 +160,11 @@
 			height: 25%;
 			background-image: url('../images/hero-bg-svg-2.svg');
 		}
-
-		@include respond(768) {
-		}
 	}
 }
 
 .services {
 	@include section-fw;
-	margin-bottom: 26rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -177,10 +173,6 @@
 
 	@include respond(1024) {
 		margin-top: 20rem;
-	}
-
-	@include respond(900) {
-		padding-bottom: 5.6rem;
 	}
 
 	&::after {
@@ -199,10 +191,6 @@
 		}
 
 		@include respond(900) {
-			height: 23%;
-		}
-
-		@include respond(768) {
 			height: 30%;
 		}
 	}
@@ -328,23 +316,43 @@
 }
 .contact {
 	@include section-narrow;
-	display: flex;
-	justify-content: space-between;
 
-	&__items {
-		margin-right: 6.8rem;
+	&__container {
+		display: flex;
+		justify-content: space-between;
 
 		@include respond(900) {
-			margin-right: 0;
-			margin-bottom: 4.8rem;
+			flex-direction: column;
+		}
+	}
+
+	& h4 {
+		font-size: 2.4rem;
+		color: $bluePrimary;
+		line-height: 1.6;
+		margin-bottom: .8rem;
+	}
+
+	&__items {
+		margin-left: 4.8rem;
+		@include respond(900) {
+			margin-left: 0;
+			text-align: center;
+			margin-top: 4.8rem;
 		}
 	}
 
 	&__form {
 		flex: 1 1 auto;
-	}
+		max-width: 64rem;
 
-	@include respond(900) {
-		flex-direction: column;
+		& button {
+			width: 100%;
+		}
+
+		@include respond(900) {
+			width: 100%;
+			margin: 0 auto;
+		}
 	}
 }

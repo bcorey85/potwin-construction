@@ -1,12 +1,21 @@
 @import './variables';
 
 .item {
-	& h4 {
+	& label {
 		color: $bluePrimary;
 		margin-bottom: .8rem;
+		font-weight: 600;
 	}
 
 	&:not(last-of-type) {
-		margin-bottom: 2.4rem;
+		margin-bottom: .8rem;
+	}
+
+	& a {
+		color: $black;
+		&:hover {
+			color: $bluePrimary;
+			text-decoration: underline;
+		}
 	}
 }

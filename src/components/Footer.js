@@ -30,7 +30,7 @@ const Footer = () => {
 							© {new Date().getFullYear()}{' '}
 							www.potwinconstruction.com
 						</p>
-						<p> Website by Brandon Corey & Tyson Comer</p>
+						<p> Website by Brandon Corey</p>
 					</div>
 				</div>
 			</div>

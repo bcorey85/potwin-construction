@@ -172,7 +172,7 @@ const ImageGrid = () => {
 
 			<div
 				onClick={openModal}
-				className={styles.img1}
+				className={styles.img}
 				onKeyDown={openModal}
 				role='button'
 				tabIndex={0}>
@@ -189,7 +189,7 @@ const ImageGrid = () => {
 
 			<div
 				onClick={openModal}
-				className={styles.img2}
+				className={styles.img}
 				onKeyDown={openModal}
 				role='button'
 				tabIndex={0}>
@@ -205,7 +205,7 @@ const ImageGrid = () => {
 			</div>
 			<div
 				onClick={openModal}
-				className={styles.img3}
+				className={styles.img}
 				onKeyDown={openModal}
 				role='button'
 				tabIndex={0}>
@@ -221,7 +221,7 @@ const ImageGrid = () => {
 			</div>
 			<div
 				onClick={openModal}
-				className={styles.img4}
+				className={styles.img}
 				onKeyDown={openModal}
 				role='button'
 				tabIndex={0}>
@@ -237,7 +237,7 @@ const ImageGrid = () => {
 			</div>
 			<div
 				onClick={openModal}
-				className={styles.img5}
+				className={styles.img}
 				onKeyDown={openModal}
 				role='button'
 				tabIndex={0}>
@@ -253,7 +253,7 @@ const ImageGrid = () => {
 			</div>
 			<div
 				onClick={openModal}
-				className={styles.img6}
+				className={styles.img}
 				onKeyDown={openModal}
 				role='button'
 				tabIndex={0}>
@@ -269,7 +269,7 @@ const ImageGrid = () => {
 			</div>
 			<div
 				onClick={openModal}
-				className={styles.img7}
+				className={styles.img}
 				onKeyDown={openModal}
 				role='button'
 				tabIndex={0}>
@@ -285,7 +285,7 @@ const ImageGrid = () => {
 			</div>
 			<div
 				onClick={openModal}
-				className={styles.img8}
+				className={styles.img}
 				onKeyDown={openModal}
 				role='button'
 				tabIndex={0}>
@@ -301,7 +301,7 @@ const ImageGrid = () => {
 			</div>
 			<div
 				onClick={openModal}
-				className={styles.img9}
+				className={styles.img}
 				onKeyDown={openModal}
 				role='button'
 				tabIndex={0}>
@@ -317,7 +317,7 @@ const ImageGrid = () => {
 			</div>
 			<div
 				onClick={openModal}
-				className={styles.img10}
+				className={styles.img}
 				onKeyDown={openModal}
 				role='button'
 				tabIndex={0}>
@@ -333,7 +333,7 @@ const ImageGrid = () => {
 			</div>
 			<div
 				onClick={openModal}
-				className={styles.img11}
+				className={styles.img}
 				onKeyDown={openModal}
 				role='button'
 				tabIndex={0}>
@@ -349,7 +349,7 @@ const ImageGrid = () => {
 			</div>
 			<div
 				onClick={openModal}
-				className={styles.img12}
+				className={styles.img}
 				onKeyDown={openModal}
 				role='button'
 				tabIndex={0}>

@@ -41,6 +41,10 @@ body {
 .anchor {
 	top: -12rem;
 	position: relative;
+
+	@include respond(600) {
+		top: -8rem;
+	}
 }
 
 .anchor-top {

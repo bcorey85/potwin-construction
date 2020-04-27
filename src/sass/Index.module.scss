@@ -51,9 +51,9 @@
 
 	&__img {
 		flex: 0 1 64rem;
-		margin-right: 1.6rem;
+		margin-right: .8rem;
 		position: relative;
-		box-shadow: 1.6rem 1.6rem 0 $bluePrimary;
+		box-shadow: .8rem .8rem 0 $bluePrimary;
 
 		@include respond(1440) {
 			max-width: 60rem;
@@ -68,11 +68,10 @@
 			margin-top: 2.4rem;
 			flex: 1 1 auto;
 			width: 100%;
-			box-shadow: .8rem .8rem 0 $bluePrimary;
 		}
 
 		@include respond(768) {
-			max-width: 80%;
+			max-width: 90%;
 		}
 
 		@include respond(425) {
@@ -205,8 +204,8 @@
 		}
 
 		@include respond(600) {
-			padding-left: 2.4rem;
-			padding-right: 2.4rem;
+			padding-left: 1.6rem;
+			padding-right: 1.6rem;
 		}
 	}
 
@@ -277,8 +276,8 @@
 		}
 
 		@include respond(600) {
-			padding-left: 2.4rem;
-			padding-right: 2.4rem;
+			padding-left: 1.6rem;
+			padding-right: 1.6rem;
 		}
 	}
 
@@ -327,6 +326,7 @@
 	}
 
 	& h4 {
+		text-align: center;
 		font-size: 2.4rem;
 		color: $bluePrimary;
 		line-height: 1.6;
@@ -334,6 +334,7 @@
 	}
 
 	&__items {
+		min-width: 24rem;
 		margin-left: 4.8rem;
 		@include respond(900) {
 			margin-left: 0;

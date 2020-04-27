@@ -2,8 +2,8 @@
 
 .item {
 	& label {
+		display: block;
 		color: $bluePrimary;
-		margin-bottom: .8rem;
 		font-weight: 600;
 	}
 

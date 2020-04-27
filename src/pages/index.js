@@ -181,7 +181,7 @@ const IndexPage = () => {
 
 						<ContactItem
 							label='Facebook'
-							item='/PotwinBuilds'
+							item='www.facebook.com/PotwinBuilds/'
 							href='https://www.facebook.com/PotwinBuilds/'
 						/>
 						<p />

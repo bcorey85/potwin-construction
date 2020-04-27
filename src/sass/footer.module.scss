@@ -73,6 +73,6 @@
 
 .nav {
 	@include respond(900) {
-		margin-bottom: 4.8rem;
+		display: none;
 	}
 }

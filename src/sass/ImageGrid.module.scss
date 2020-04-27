@@ -4,32 +4,19 @@
 .grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 1.6rem;
+	grid-gap: 2.4rem;
 	grid-auto-rows: 25.6rem;
 	margin-top: 2.4rem;
 	position: relative;
 
 	&::before {
-		content: '';
-		position: absolute;
-		top: 2.5%;
-		left: -2.5%;
-		width: 3.5%;
-		height: 95%;
-		background-color: $grayLight;
-		z-index: -1;
+		left: -1.5%;
 	}
 
 	&::after {
-		content: '';
-		position: absolute;
-		top: 2.5%;
-		right: -2.5%;
-		width: 3.5%;
-		height: 95%;
-		background-color: $grayLight;
-		z-index: -1;
+		right: -1.5%;
 	}
+
 	@include respond(1280) {
 		grid-auto-rows: 20vw;
 	}
@@ -39,7 +26,9 @@
 	}
 
 	@include respond(600) {
-		grid-gap: .8rem;
+		grid-auto-rows: 30vw;
+
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
@@ -51,76 +40,4 @@
 
 .img:hover {
 	opacity: .6;
-}
-
-.img1 {
-	composes: img;
-	grid-column: 1;
-	grid-row: 1;
-}
-
-.img2 {
-	composes: img;
-	grid-column: 2;
-	grid-row: 1;
-}
-
-.img3 {
-	composes: img;
-	grid-column: 3;
-	grid-row: 1;
-}
-
-.img4 {
-	composes: img;
-	grid-column: 1;
-	grid-row: 2;
-}
-
-.img5 {
-	composes: img;
-	grid-column: 2;
-	grid-row: 2;
-}
-
-.img6 {
-	composes: img;
-	grid-column: 3;
-	grid-row: 2;
-}
-
-.img7 {
-	composes: img;
-	grid-column: 1;
-	grid-row: 3;
-}
-
-.img8 {
-	composes: img;
-	grid-column: 2;
-	grid-row: 3;
-}
-
-.img9 {
-	composes: img;
-	grid-column: 3;
-	grid-row: 3;
-}
-
-.img10 {
-	composes: img;
-	grid-column: 1;
-	grid-row: 4;
-}
-
-.img11 {
-	composes: img;
-	grid-column: 2;
-	grid-row: 4;
-}
-
-.img12 {
-	composes: img;
-	grid-column: 3;
-	grid-row: 4;
 }

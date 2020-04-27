@@ -43,6 +43,11 @@
 
 	@include respond(600) {
 		max-width: none;
+		height: 32rem;
+	}
+
+	@include respond(350) {
+		max-width: none;
 		height: 24rem;
 	}
 
@@ -51,20 +56,6 @@
 		border-bottom: .8rem solid $bluePrimary;
 		width: 100%;
 		display: block;
-
-		@include respond(900) {
-			border-left: .8rem solid $bluePrimary;
-			border-right: .8rem solid $bluePrimary;
-			border-top: none;
-			border-bottom: none;
-		}
-
-		@include respond(600) {
-			border-left: none;
-			border-right: none;
-			border-top: .8rem solid $bluePrimary;
-			border-bottom: .8rem solid $bluePrimary;
-		}
 	}
 }
 

@@ -4,9 +4,9 @@
 .sectionHeading {
 	margin-bottom: 4.8rem;
 	color: $bluePrimary;
-	margin-left: -1.7rem;
+	margin-left: -1.6rem;
 	padding-left: .8rem;
-	border-left: .6rem solid $redSecondary;
+	border-left: .8rem solid $redSecondary;
 
 	@include respond(600) {
 		margin-bottom: 3.2rem;

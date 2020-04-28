@@ -8,7 +8,7 @@ const Process = ({ number, title, children, imgSrc, imgAlt }) => {
 			<div className={styles.content}>
 				<div className={styles.description}>
 					<div className={styles.number}>{number}</div>
-					<h4>{title}</h4>
+					<h3>{title}</h3>
 					<p>{children}</p>
 				</div>
 			</div>

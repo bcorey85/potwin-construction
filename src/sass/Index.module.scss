@@ -335,7 +335,8 @@
 		font-size: 2.4rem;
 		color: $bluePrimary;
 		line-height: 1.6;
-		margin-bottom: .8rem;
+		margin-bottom: 1.6rem;
+		border-bottom: .2rem solid $bluePrimary;
 	}
 
 	&__items {

@@ -266,6 +266,10 @@
 	background-color: $grayLight;
 	padding: 9.6rem 0;
 
+	@include respond(600) {
+		padding: 7.2rem 0;
+	}
+
 	&__container {
 		width: 100%;
 		max-width: 112.8rem;

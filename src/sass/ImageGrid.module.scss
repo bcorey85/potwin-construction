@@ -4,7 +4,7 @@
 .grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 2.4rem;
+	grid-gap: 3.6rem;
 	grid-auto-rows: 25.6rem;
 	margin-top: 2.4rem;
 	position: relative;
@@ -36,6 +36,7 @@
 	cursor: pointer;
 	overflow: hidden;
 	transition: opacity .2s;
+	box-shadow: $shadow;
 }
 
 .img:hover {

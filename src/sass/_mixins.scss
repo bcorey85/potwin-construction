@@ -52,7 +52,7 @@
 	width: 100%;
 	max-width: 112.8rem;
 	margin: auto;
-	margin-bottom: 10.4rem;
+	margin-bottom: 20rem;
 
 	@include respond(1280) {
 		padding-left: 3.2rem;
@@ -60,16 +60,17 @@
 	}
 
 	@include respond(1024) {
-		margin-bottom: 11.2rem;
+		margin-bottom: 16rem;
 	}
 
 	@include respond(900) {
-		margin-bottom: 7.2rem;
+		margin-bottom: 9.6rem;
 	}
 
 	@include respond(600) {
 		padding-left: 1.6rem;
 		padding-right: 1.6rem;
+		margin-bottom: 7.2rem;
 	}
 }
 
@@ -80,7 +81,7 @@
 	right: 50%;
 	margin-left: -50vw;
 	margin-right: -50vw;
-	margin-bottom: 10.4rem;
+	margin-bottom: 20rem;
 
 	// @include respond(1280) {
 	// 	padding-left: 3.2rem;
@@ -88,15 +89,14 @@
 	// }
 
 	@include respond(1024) {
-		margin-bottom: 11.2rem;
+		margin-bottom: 16rem;
 	}
 
 	@include respond(900) {
-		margin-bottom: 7.2rem;
+		margin-bottom: 9.6rem;
 	}
 
-	// @include respond(600) {
-	// 	padding-left: 2.4rem;
-	// 	padding-right: 2.4rem;
-	// }
+	@include respond(600) {
+		margin-bottom: 7.2rem;
+	}
 }

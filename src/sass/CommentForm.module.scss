@@ -31,6 +31,10 @@
 
 	& button {
 		align-self: flex-end;
-		margin-top: 3.2rem;
+		margin-top: 6.4rem;
+
+		@include respond(1280) {
+			margin-top: 4rem;
+		}
 	}
 }

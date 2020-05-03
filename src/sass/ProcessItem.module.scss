@@ -34,7 +34,7 @@
 .content {
 	display: flex;
 	max-width: 50rem;
-	margin-right: 2.4rem;
+	margin-right: 6.4rem;
 
 	@include respond(900) {
 		margin-right: 0;

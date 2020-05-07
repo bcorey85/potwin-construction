@@ -70,11 +70,7 @@
 .image {
 	max-width: 56rem;
 	width: 100%;
-
-	& img {
-		border-top: .8rem solid $bluePrimary;
-		border-bottom: .8rem solid $bluePrimary;
-	}
+	box-shadow: 0.8rem 0.8rem 0 $bluePrimary;
 
 	@include respond(900) {
 		margin-right: 0;
@@ -82,6 +78,5 @@
 		max-width: 100%;
 		max-height: 100%;
 		flex: 1 1 auto;
-		box-shadow: none;
 	}
 }

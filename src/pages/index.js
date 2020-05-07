@@ -29,8 +29,8 @@ const IndexPage = () => {
 							High-quality custom home remodeling in Lincoln, NE
 						</h1>
 						<h5>
-							Rain, snow, or shine, we’ll be there to help
-							transform your home into a comfortable reality.{' '}
+							We will help you transform your home into that
+							comfortable reality you've been dreaming of.
 						</h5>
 						<Button href='#contact' type='primary'>
 							Schedule Your Consultation

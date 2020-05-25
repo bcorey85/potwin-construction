@@ -2,31 +2,26 @@
 @import './mixins';
 
 .card {
-	max-width: 40rem;
+	max-width: 48rem;
 	width: 100%;
 	box-shadow: $shadow;
 	background-color: $white;
 	text-decoration: none;
 	border: .1rem solid $grayMedium;
-	border-top: .8rem solid $bluePrimary;
 
 	@include respond(900) {
 		max-width: 100%;
 		display: flex;
 		flex-direction: row-reverse;
-		border: .1rem solid $grayMedium;
-		border-left: .8rem solid $bluePrimary;
 	}
 
 	@include respond(600) {
-		border: .1rem solid $grayMedium;
-		border-top: .8rem solid $bluePrimary;
 		max-width: 40rem;
 		display: block;
 	}
 
 	&:not(:last-of-type) {
-		margin-right: 6.4rem;
+		margin-right: 5.6rem;
 
 		@include respond(1280) {
 			margin-right: 4.8rem;
@@ -46,6 +41,7 @@
 .cardImg {
 	width: 100%;
 	height: 30rem;
+	border-bottom: .4rem solid $bluePrimary;
 
 	@include respond(1024) {
 		height: 25.6rem;
@@ -54,11 +50,15 @@
 	@include respond(900) {
 		max-width: 24rem;
 		height: auto;
+		border-bottom: none;
+		border-left: .4rem solid $bluePrimary;
 	}
 
 	@include respond(600) {
 		max-width: none;
 		height: 25.6rem;
+		border-bottom: .4rem solid $bluePrimary;
+		border-left: none;
 	}
 
 	@include respond(350) {
@@ -74,7 +74,7 @@
 
 .cardBody {
 	color: $black;
-	padding: 4rem 2rem;
+	padding: 3.6rem 2.4rem;
 	text-decoration: none;
 
 	@include respond(900) {
@@ -96,12 +96,12 @@
 	}
 
 	& h4 {
-		margin-bottom: .8rem;
+		margin-bottom: 1.6rem;
 		color: $bluePrimary;
 	}
 
 	& p {
-		margin-bottom: 4.8rem;
+		margin-bottom: 3.6rem;
 
 		@include respond(600) {
 			margin-bottom: 3.2rem;

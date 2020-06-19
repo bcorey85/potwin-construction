@@ -1,7 +1,7 @@
 @import './variables';
 
 .item {
-	& label {
+	& p {
 		display: block;
 		color: $bluePrimary;
 		font-weight: 600;

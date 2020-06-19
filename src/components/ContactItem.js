@@ -6,7 +6,7 @@ const ContactItem = ({ label, item, href }) => {
 	if (href) {
 		return (
 			<p className={styles.item}>
-				<label>{label}</label>
+				<p>{label}</p>
 				<a href={href}>{item}</a>
 			</p>
 		);
@@ -14,7 +14,7 @@ const ContactItem = ({ label, item, href }) => {
 
 	return (
 		<p className={styles.item}>
-			<label>{label}</label>
+			<p>{label}</p>
 			{item}
 		</p>
 	);

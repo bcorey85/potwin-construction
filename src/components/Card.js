@@ -5,10 +5,10 @@ import styles from '../sass/Card.module.scss';
 
 const Card = ({ imgSrc, imgAlt, title, children, linkURL, linkText }) => {
 	return (
-		<div className={styles.card}>
-			<div className={styles.cardImg}>
+		<article className={styles.card}>
+			<figure className={styles.cardImg}>
 				<Image fluid={imgSrc} alt={imgAlt} style={{ height: '100%' }} />
-			</div>
+			</figure>
 
 			<div className={styles.cardBody}>
 				<h4>{title}</h4>
@@ -25,7 +25,7 @@ const Card = ({ imgSrc, imgAlt, title, children, linkURL, linkText }) => {
 					</div>
 				</a>
 			</div>
-		</div>
+		</article>
 	);
 };
 

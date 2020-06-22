@@ -11,7 +11,7 @@ const imageGridQuery = graphql`
 			relativePath: { eq: "potwin-construction-flooring-1.jpg" }
 		) {
 			childImageSharp {
-				fixed(quality: 100, width: 756) {
+				fixed(quality: 90, width: 756) {
 					...GatsbyImageSharpFixed_withWebp
 				}
 			}
@@ -20,7 +20,7 @@ const imageGridQuery = graphql`
 			relativePath: { eq: "potwin-construction-tilework-2.jpg" }
 		) {
 			childImageSharp {
-				fixed(quality: 100, width: 1080) {
+				fixed(quality: 90, width: 1080) {
 					...GatsbyImageSharpFixed_withWebp
 				}
 			}
@@ -29,21 +29,21 @@ const imageGridQuery = graphql`
 			relativePath: { eq: "potwin-construction-tilework-1.jpg" }
 		) {
 			childImageSharp {
-				fixed(quality: 100, width: 443) {
+				fixed(quality: 90, width: 443) {
 					...GatsbyImageSharpFixed_withWebp
 				}
 			}
 		}
 		grid4: file(relativePath: { eq: "potwin-construction-patio-2.jpg" }) {
 			childImageSharp {
-				fixed(quality: 100, width: 1008) {
+				fixed(quality: 90, width: 1008) {
 					...GatsbyImageSharpFixed_withWebp
 				}
 			}
 		}
 		grid5: file(relativePath: { eq: "potwin-construction-fencing-1.jpg" }) {
 			childImageSharp {
-				fixed(quality: 100, width: 865) {
+				fixed(quality: 90, width: 865) {
 					...GatsbyImageSharpFixed_withWebp
 				}
 			}
@@ -52,7 +52,7 @@ const imageGridQuery = graphql`
 			relativePath: { eq: "potwin-construction-concrete-2.jpg" }
 		) {
 			childImageSharp {
-				fixed(quality: 100, width: 756) {
+				fixed(quality: 90, width: 756) {
 					...GatsbyImageSharpFixed_withWebp
 				}
 			}
@@ -61,7 +61,7 @@ const imageGridQuery = graphql`
 			relativePath: { eq: "potwin-construction-bathroom-3.jpg" }
 		) {
 			childImageSharp {
-				fixed(quality: 100, width: 528) {
+				fixed(quality: 90, width: 528) {
 					...GatsbyImageSharpFixed_withWebp
 				}
 			}
@@ -70,7 +70,7 @@ const imageGridQuery = graphql`
 			relativePath: { eq: "potwin-construction-bathroom-2.jpg" }
 		) {
 			childImageSharp {
-				fixed(quality: 100, width: 600) {
+				fixed(quality: 90, width: 600) {
 					...GatsbyImageSharpFixed_withWebp
 				}
 			}
@@ -79,21 +79,21 @@ const imageGridQuery = graphql`
 			relativePath: { eq: "potwin-construction-bathroom-4.jpg" }
 		) {
 			childImageSharp {
-				fixed(quality: 100, width: 810) {
+				fixed(quality: 90, width: 810) {
 					...GatsbyImageSharpFixed_withWebp
 				}
 			}
 		}
 		grid10: file(relativePath: { eq: "potwin-construction-shower-1.jpg" }) {
 			childImageSharp {
-				fixed(quality: 100, width: 1137) {
+				fixed(quality: 90, width: 1137) {
 					...GatsbyImageSharpFixed_withWebp
 				}
 			}
 		}
 		grid11: file(relativePath: { eq: "potwin-construction-shower-3.jpg" }) {
 			childImageSharp {
-				fixed(quality: 100, width: 1008) {
+				fixed(quality: 90, width: 1008) {
 					...GatsbyImageSharpFixed_withWebp
 				}
 			}
@@ -102,7 +102,7 @@ const imageGridQuery = graphql`
 			relativePath: { eq: "potwin-construction-bathroom-9.jpg" }
 		) {
 			childImageSharp {
-				fixed(quality: 100, width: 789) {
+				fixed(quality: 90, width: 789) {
 					...GatsbyImageSharpFixed_withWebp
 				}
 			}
